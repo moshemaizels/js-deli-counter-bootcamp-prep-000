@@ -23,7 +23,11 @@ function currentLine(line) {
   } else {
     lineReadout = "The line is currently:"
     for (var i = 0; i < line.length; i++) {
-      lineReadout = lineReadout + ` ${i+1}. ${line[i]},`
+      if (i == line.length - 1) {
+        
+      } else {
+        lineReadout = lineReadout + ` ${i+1}. ${line[i]},`
+    }
     }
     return lineReadout
   }
