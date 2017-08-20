@@ -11,6 +11,7 @@ function nowServing(currentLine) {
   } else {
     var currentCust = currentLine[0];
     currentLine.shift()
+    return `Currently serving ${currentCust}`
   }
 
 }
